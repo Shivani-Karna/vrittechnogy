@@ -1,0 +1,45 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap');
+/* descendent */
+div p,h1{
+    width: auto;
+    color: blueviolet;
+}
+/* pseudo class */
+h1:hover{
+    color: blue;
+}
+p::first-letter{
+    color:red;
+}
+p::before{
+    display: block;
+}
+input,text{
+    color: brown;
+}
+.font{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p{
+    border-width: 2px;
+    border-style: solid;
+    border-color: blueviolet;
+    padding: 12px;
+    margin: auto;
+
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;/*windows ma ataunai feature*/
+}
+.flex-container >div{
+    width: 100px;
+    background-color: aquamarine;
+    margin:10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: medium;
+}
+
+/*  */
