@@ -58,17 +58,50 @@
 // {
 //     alert('shivani');
 // }
-// else{
-//     alert('Not my name');
+// else if(person.age <20) {
+//     alert('Failed to execute');
 // }
-let objectvitrakoobject ={
-    name:'shivani',
-    roll:10,
-    course :{
-        first:'python',
-        second:'java',
-        third:'javascript'
+// let objectvitrakoobject ={
+//     name:'shivani',
+//     roll:10,
+//     course :{
+//         first:'python',
+//         second:'java',
+//         third:'javascript'
 
-    },
-};
-alert(objectvitrakoobject.course.first);
+//     },
+// };
+// alert(objectvitrakoobject.course.first);
+//FUNCTION
+// function add(parameter1, parameter2){
+//     add(argument1, argument2);
+
+// }
+//FUNCTION
+// function add(a,b){
+//     return alert(a+b);
+// }
+// add(10,20);
+// add(30,40);
+// function multiplication(a,b){
+//     return alert(a*b);
+// }
+// multiplication(2,3);
+// multiplication(5,6);
+
+// function comparison(){
+//     let a=7;
+//     let b=8;
+//     if(!(a>b)){
+//     alert('oooo');
+//     }
+// }
+// comparison();
+// LOOPING
+// for (i=0; i<=10;i++){
+//     console.log(i,`hello${i}`);
+// }
+// let array =[1,2,3,4,5];
+// for (i=0;i<array.length;i++){
+//     console.log(array[i],'print i');
+// }
