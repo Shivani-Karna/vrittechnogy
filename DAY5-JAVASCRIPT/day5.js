@@ -48,15 +48,27 @@
 // let fruits={first:'Mango',
 // second:'Apple',
 // third:'grapes'};
-// console.log(fruits);         
-let person ={
-    person1:'shivani',
-    person2 :'pooja'
+// console.log(fruits);     
+// let person ={
+//     person1:'shivani',
+//     person2 :'pooja',
+//     age:24
+// };
+// if (person.person1 ==='shivani' && person.age >20)
+// {
+//     alert('shivani');
+// }
+// else{
+//     alert('Not my name');
+// }
+let objectvitrakoobject ={
+    name:'shivani',
+    roll:10,
+    course :{
+        first:'python',
+        second:'java',
+        third:'javascript'
+
+    },
 };
-if (person.person1 ==='shivani')
-{
-    alert('shivani');
-}
-else{
-    alert('Not my name');
-}
+alert(objectvitrakoobject.course.first);
