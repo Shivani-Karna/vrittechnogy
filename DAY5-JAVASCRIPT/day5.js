@@ -45,10 +45,18 @@
 //    console.log(object1["age"],"object1"); 
 //    console.log(object1.name,"object1");     
 //EXAMPLE OF OBJECTS
-let fruits={first:'Mango',
-second:'Apple',
-third:'grapes'};
-console.log(fruits);         
-
-
-
+// let fruits={first:'Mango',
+// second:'Apple',
+// third:'grapes'};
+// console.log(fruits);         
+let person ={
+    person1:'shivani',
+    person2 :'pooja'
+};
+if (person.person1 ==='shivani')
+{
+    alert('shivani');
+}
+else{
+    alert('Not my name');
+}
