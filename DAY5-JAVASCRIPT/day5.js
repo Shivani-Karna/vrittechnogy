@@ -105,3 +105,121 @@
 // for (i=0;i<array.length;i++){
 //     console.log(array[i],'print i');
 // }
+// SWITCH CASE
+// let calculation = prompt("Enter your operation among +,-,* and /");
+// const a= parseInt(prompt("Enter first"));
+// const b=parseInt(prompt("Enter second"));
+// let result;
+
+// switch(calculation)
+// {
+//     case "+":
+//         result=a+b;
+//         //template string
+//         console.log(`${a}+${b}= ${result}`);
+//         break;
+//     case "-":
+//         console.log(`${a}-${b}= ${result}`)
+//             break;   
+//     case "*":
+//         console.log(`${a}*${b}= ${result}`)
+//             break;
+//     default:
+//         console.log(`${a}/${b}= ${result}`);                 
+// }
+//ADD AT THE END------
+
+// console.log(calculation);
+// let languages =['java','python','js'];
+// languages.push('Golang');
+// console.log(languages);
+
+// ---ADD AT THE STARTING-----
+// let languages =['java','python','js'];
+// console.log(languages);
+// languages.unshift('Golang');
+// console.log(languages);
+
+// ---REMOVE FROM LAST---
+// let languages =['java','python','js'];
+// console.log(languages);
+// languages.pop('Golang');
+// console.log(languages);
+
+//  ---INDEX WISE VALUE CHANGE GARNA NI MILCHA--
+// let dailyroutine =['eat','sleep'];
+// dailyroutine[2]='dance';
+// console.log(dailyroutine);
+
+// // ----SORTING METHOD-----
+// console.log(dailyroutine.sort(),'sorted array');
+// console.log(dailyroutine.reverse(),'reversed array');
+
+// // --CONCAT METHOD--
+// console.log(dailyroutine.concat(dailyroutine));
+
+// ---JAVASCRIPT MAP FUNCTION--Modify garna lai matra use huncha
+// const numbers =[10,20,30,40];
+// const newArr =numbers.map(multiply);
+// function multiply(num){
+//     return num*10;
+// }
+// console.log(newArr,'newArr');
+
+
+//---ARRAYY OF NUMBERS----
+// const numbers =[10,20,30,40];
+// const updated =numbers.map(subtraction);
+// function subtraction(data){
+//     return data-5;
+// }
+// console.log(updated,'naya array');
+
+
+//---ARRAY OF OBJECTS----
+// let person = [
+// {
+//     name:'JAVA',
+//     last_name:'first',
+// },
+// {
+//     name:'JAVASCRIPT',
+//     last_name:'second',
+// },
+// ];
+
+// const updatedperson =person.map(fullname);
+// function fullname(name){
+//     console.log(name.name,'testname');
+//     return {Fullname:`${name.name} ${name.last_name}`};
+// }
+// console.log(updatedperson,'nayamanchai');
+
+
+
+let person = [
+    {
+        name:'JAVA',
+        last_name:'first',
+    },
+    {
+        name:'JAVASCRIPT',
+        last_name:'second',
+
+    },
+    {
+        name:'Python',
+        last_name:'third',
+    },
+    {
+        name:'JAVASCRIPT',
+        last_name:'second',
+    },    
+    ];
+    
+    const updatedperson =person.filter(byfirstname);
+    function byfirstname(name){
+        // console.log(name.name,'testname');
+        return name.name==='JAVASCRIPT';
+    }
+    console.log(updatedperson,'nayamanchai');
