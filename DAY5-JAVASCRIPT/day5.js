@@ -197,29 +197,122 @@
 
 
 
-let person = [
-    {
-        name:'JAVA',
-        last_name:'first',
-    },
-    {
-        name:'JAVASCRIPT',
-        last_name:'second',
+// let person = [
+//     {
+//         name:'JAVA',
+//         last_name:'first',
+//     },
+//     {
+//         name:'JAVASCRIPT',
+//         last_name:'second',
 
-    },
-    {
-        name:'Python',
-        last_name:'third',
-    },
-    {
-        name:'JAVASCRIPT',
-        last_name:'second',
-    },    
-    ];
+//     },
+//     {
+//         name:'Python',
+//         last_name:'third',
+//     },
+//     {
+//         name:'JAVASCRIPT',
+//         last_name:'second',
+//     },    
+//     ];
     
-    const updatedperson =person.filter(byfirstname);
-    function byfirstname(name){
-        // console.log(name.name,'testname');
-        return name.name==='JAVASCRIPT';
-    }
-    console.log(updatedperson,'nayamanchai');
+//     const updatedperson =person.filter(byfirstname);
+//     function byfirstname(name){
+//         // console.log(name.name,'testname');
+//         return name.name==='JAVASCRIPT';
+//     }
+//     console.log(updatedperson,'nayamanchai');
+
+// HOMEWORK
+
+// Syntax of reduce method
+// array.reduce(function(total, currentValue, currentIndex,arr))
+
+// const numbers =[4,5,6,7,8];
+// let testedArray =numbers.reduce(getSum,2);
+// function getSum(total,num){
+// console.log(total, "total")
+// return total+Math.round(num);
+// }
+// console.log(testedArray,"testedArray");
+// const arrayofFoods=[
+//     {name:"Pizza",cost:120},
+//     {name:"Pasta",cost:500},
+// ];
+// let totalsum = arrayofFoods.reduce(getSum,0);
+// function getSum(final,num){
+//     console.log(final,"final_cost");
+//     return final+Math.round(num.cost);
+// }
+// console.log(totalsum);
+
+// global scope
+// Hoisting(vaneko declare hunu vanda pahilai ni use garna diyo vanai tyai feature ho)
+
+// var test;
+// function hello(){
+//     //local variable
+//     //var function scope
+// }
+// if (true){
+//     var helloWorld ;
+// }
+// console.log(helloWorld,'helloworld');
+// let example=[5,6,7,8];
+// function myFunction(item, index){
+//     // console.log(example[index]);
+// }
+// console.log(example);
+
+// const arrayofFoods =[
+
+// {
+//     name:"pizza"
+
+
+// }
+// ];
+
+//Function without name is anonymous function
+// let arrFunc = function (foods){
+//     return foods.name === 'Pizza';
+// };
+
+// let updatedArray = arrayofFoods.find(function(foods){
+//     return foods.name ==='Pizza';
+// });
+// ;
+// -----Arrow Expression---
+
+// let updatedArray = arrayofFoods.find((foods)=>{
+//     return foods.name === 'Pizza'
+// });
+// console.log(object);
+// ----While Loop---
+
+// const newArray = [1,3,5,6];
+// let againArray=[];
+// let i=0;
+// while (i<5){
+    
+//     // console.log(i,'i');
+//     againArray.push(newArray[i]);
+//     i++;
+// }
+// console.log(againArray);
+
+// ---Do while Loop---
+// let array=['ram','shyam','hari'];
+// // let newarray=[];
+// let i=0;
+// do{
+//     console.log(array[i],'i');
+//     i++;
+
+// }while(i>5);
+//     // console.log(newarray);
+// ---Immediately Invoked Function--
+(function(){
+    console.log("Welcome");
+})();
