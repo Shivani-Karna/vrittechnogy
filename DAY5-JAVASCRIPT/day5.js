@@ -313,6 +313,129 @@
 // }while(i>5);
 //     // console.log(newarray);
 // ---Immediately Invoked Function--
-(function(){
-    console.log("Welcome");
-})();
+// (function(){
+//     console.log("Welcome");
+// })();
+
+// let arr =[10,20,30]
+// console.log(arr);
+
+// const data =[
+//     {food:{name:"pizza",id:2}, qty:1},
+//     {food:{name:"momo",id:3},qty:5},
+//     {food:{name:"pizza",id:2},qty:9}
+// ];
+// let i=0;
+
+// const reducedData1 = (arr) => {
+//     const  filteredArr = arr.filter((obj) => {
+//         return obj.food.id ==2;
+//     });
+// }
+// for (i=0; i< data.length; i++){
+//     console.log(data[i]);
+// 
+// console.log(document.getElementById(("demo"),'id'));
+// console.log(getElementByClassName('demo'),'class');
+// console.log(getElementByName('shivani'),'name');
+
+// try catch syntax
+//  try{
+    // block of code to try
+// }
+// catch(err){
+    // Block of code to handle errors
+// }
+// let x=1;
+// try{
+//     if (x==0){
+//         console.log('i am test');
+//     }else{
+//         throw 'error in test';
+//     }
+// console.log('hello i am try');    
+
+// }catch (error){
+//     console.log(error,'');
+// }
+
+// ----JAVASCRIPT PROMISE-----------
+// let promise =new Promise(function(resolve,reject)
+// {
+//     // code execution (May take some time)
+//     // resolve();
+//     // reject();
+
+// });
+
+// let x=1;
+// let promise = new Promise ((resolve, reject) => {
+//     if (x===0){
+//         resolve('hello i am resolve');
+//     }else{
+//         reject("Error");
+//     }
+
+// });
+// console.log(promise,"promise");
+
+// 'Consuming Code' (Must wait for a fulfilled Promise)
+// promise.then(
+    //function (value){
+        /* code is successful*/
+    // },
+    // function(error){
+
+//    
+
+// let x=1;
+// let promise = new Promise((resolve,reject) => {
+//     if (x===0){
+//         resolve('hello I am Resolved');
+//     }else {
+//         reject("Error");
+//     }
+    
+// });
+// console.log(promise,'promise');
+// promise.then(
+//     (value) => {
+//         console.log(value, 'value');
+//     },
+//     (error) => {
+//         console.log(error,'error')
+//     }
+// );
+
+
+
+// let header = document.getElementsByClassName('demo');
+// console.log(header);
+// header[0].innerHTML = '<p>I am changing something</p>';
+// header[0].style.color ='blue';
+// console.log(header,'header');
+
+// Create Element
+// let button = document.createElement('button');
+// button.innerText = 'Button rakhiyo';
+// console.log(button,'button');
+
+// ----
+// let header =document.createElement("h1");
+// console.log(headerh1,"h1");
+
+// // appendChild
+
+// document.body.appendChild(header);
+// console.log(button,'button');
+
+// let header =document.createElement("h1");
+// header.innerHTML = 'header new banaiyo';
+// document.body.appendChild(header);
+
+
+
+let selection = document.getElementById("myFood");
+
+console.log(selection.firstElementChild,'Food ko selection');
+console.log(selection.parentNode,"parent node");
