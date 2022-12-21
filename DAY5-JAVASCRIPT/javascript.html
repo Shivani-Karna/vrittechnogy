@@ -5,17 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="javascript.css" />
 
     <!-- <script src="HOMEWORK.JS"></script> -->
   </head>
   <body>
+    <!-- <h3> HTML list using Javascript</h3>
+    <ul id="Unlist"></ul>
+    <script>
+      let data = ['item1','item2','item3','item4'];
+      let list = document.getElementById('Unlist');
+      // console.log(list);
+      for (i=0; i<data.length; i++){
+        var li = document.createElement('li');
+        // console.log(li);
+        li.innerText = data [i];
+        // console.log(data[i])
+        console.log(list.appendChild(li));
+        // console.log(list); -->
+
+    <!-- } -->
+
     <p></p>
-    <div class="parent">
-      <ul id="myFood">
-        <li>Pizza</li>
-        <li>Burger</li>
-      </ul>
-    </div>
+    <!-- <button id="button">Point Me</button> -->
+    <!-- <input type="text">
+    <button  onclick="testClick()">Hello</button>
+    <p>Add items</p> -->
+    <input type="text" id="items" />
+    <button>Accept Me</button>
     <script src="day5.js"></script>
+    <div class="new-items">Experiment</div>
+    <ul id="list"></ul>
   </body>
 </html>

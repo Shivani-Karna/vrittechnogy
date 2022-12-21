@@ -435,7 +435,112 @@
 
 
 
-let selection = document.getElementById("myFood");
+// let selection = document.getElementById("myFood");
 
-console.log(selection.firstElementChild,'Food ko selection');
-console.log(selection.parentNode,"parent node");
+// console.log(selection.firstElementChild,'Food ko selection');
+// console.log(selection.parentNode,"parent node");
+
+// -----HOMEWORK--------
+
+// Question no 1:
+
+// let i=0;
+// const Fruits =[
+//     {name:'Apple', cost:'200'},
+//     {name:'Guava', cost:'100'},
+//     {name:'Mango', cost:'200'},
+// ];
+// // for(i=0;i<Fruits.length;i++) {
+// //     needed=Fruits[i];
+// //     console.log(needed.name.replace);
+// // }
+// Fruits.forEach((item) => {
+//     item[0].name='Grapes';
+//     item[1].name='Watermelon';
+//     item[2].name='Banana'}
+//     );
+// console.log(Fruits);
+// Syntax;
+// event listener
+// let button = document.querySelector('button');
+// console.log(button,"button");
+// let pTag = document.querySelector('p');
+
+// button.addEventListener('click',() => {
+//     pTag.innerHTML = "Hello,I am clicked";
+//     console.log("I am clicked");
+// });
+
+// function testClick (){
+//     console.log("I am clicked from test");
+// }
+
+// let inputField = document.querySelector('input');
+// console.log(inputField, "inputField");
+// inputField.addEventListener('keypress',keypress);
+// function keypress(event){
+//     if (event.key ==='h')
+//     // console.log(event,'event');
+//     console.log('key pressed');
+
+// }
+// let inputSelector =document.querySelector("#items");
+// console.log(inputSelector,'inputSelector');
+// let button =document.querySelector('button');
+// console.log(button,'button');
+// // create Element
+// const createElement = () => {
+//     const listItem =document.createElement('li');
+//     console.log(listItem,'listItem');
+// };
+
+// const addItem = () => {
+//     console.log('I am clicked');
+//     createElement();
+
+// };
+// button.addEventListener('click',addItem);
+let itemInput = document.querySelector("#items");
+let listOfItems = document.getElementById("items");
+console.log(itemInput,'input');
+let button =document.querySelector('button');
+console.log(button);
+
+
+let inputField = document.getElementById("input-item");
+console.log(inputField);
+let btn2 = document.getElementById("btn1");
+console.log(btn2);
+
+// CREATE ELEMENT
+const createElement = () => {
+    const listItem = document.createElement('li');
+    // console.log(listItem);
+    const label = document.createElement('label');
+    label.innerText = itemInput.value;
+    listItem.appendChild(label);
+    console.log(listItem, 'listItem');
+    
+};
+
+
+// function to be called
+const addItem =() => {
+    console.log('I am clicked');
+    let items=createElement();
+    listOfItems.appendChild(items);
+    console.log("items",items);
+};
+
+// first add event Listener
+button.addEventListener("click",addItem);
+// let listSelector = document.querySelector('#list');
+
+// console.log(object);
+
+// };
+//  const addItem =() => {
+//     console.log("I am clicked");
+//     createElement();
+//  };
+//  button.addEventListener("click",addItem);
