@@ -67,6 +67,36 @@
 
 // ---DEEP COPY &&& SHALLOW COPY----
 
+// SERVER
+// // fetch('https://jsonplaceholder.typicode.com/posts/1');
+// const button = document.querySelector('button');
+// const divWithQuote= document.querySelector('#insertQuoteHere');
+// // console.log(divWithQuote,'divWithQuote');
+// const getPost = () => {
+//     console.log('i am running');
+//     let data = fetch('https://jsonplaceholder.typicode.com/posts/1')
+//     .then((response) => response.json())
+//     .then((data)=> (divWithQuote.innerText = data.title));
+
+// // }
+
+// };
+// button.addEventListener('click',getPost);
 
 
 
+fetch('https://jsonplaceholder.typicode.com/posts')
+.then(response => response.json())
+console.log(object);
+.then(data => container(data))
+.catch(error => alert(`the error: ${error}`))
+
+let container = (data)=>{
+    for(let i=0; i<10; i++){
+        
+        console.log(`${i+1}.${data[i].title}`)
+
+        
+    }
+    // console.log(data.innerText=data.title)
+}
